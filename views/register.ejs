@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Realtime Chat | Register</title>
+
+        <!--? Bootstrap -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 shadow p-3">
+                    <h3 class="text-center mb-2">Register</h1>
+                    <form action="/register" method="POST">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control mb-3" name="username" id="username" placeholder="Username" name="username" required>
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control mb-3" name="password" id="password" placeholder="Password" name="password" required>
+                            <button type="submit" class="btn btn-primary w-100">Register</button>
+                            <p>Already have account? <a href="/login" class="text-decoration-none text-primary">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
